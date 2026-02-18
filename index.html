@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kocha, Lubi, Szanuje</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- Ekran startowy -->
+    <div id="screen-start" class="screen active">
+      <h1 class="title">Kocha, Lubi, Szanuje</h1>
+      <p class="subtitle">Wyrwij płatki i poznaj odpowiedź!</p>
+      <button id="btn-start" class="btn btn-primary pulse">Zaczynamy!</button>
+    </div>
+
+    <!-- Ekran gry -->
+    <div id="screen-game" class="screen">
+      <div id="flower-container">
+        <div id="flower">
+          <div id="flower-center">
+            <div class="eye eye-left"></div>
+            <div class="eye eye-right"></div>
+            <div class="mouth"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ekran wyniku -->
+    <div id="screen-result" class="screen">
+      <div id="result-word"></div>
+      <button id="btn-replay" class="btn btn-primary pulse">Jeszcze raz!</button>
+    </div>
+
+  </div>
+
+  <div id="particles"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
